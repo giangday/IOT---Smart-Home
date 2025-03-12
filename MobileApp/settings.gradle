@@ -1,0 +1,13 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven{
+//            url "https://repo.eclipse.org/content/repositories/paho-snapshots/"
+            url "https://jitpack.io"
+        }
+    }
+}
+rootProject.name = "An IoT App"
+include ':app'

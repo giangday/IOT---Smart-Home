@@ -1,0 +1,43 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.FragmentScheduler"
+    android:orientation="vertical"
+    android:background="#e4e9ee">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180px">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Lịch tự động bật/tắt các thiết bị"
+            android:textColor="@color/black"
+            android:textSize="60px"
+            android:gravity="center"
+            android:layout_marginTop="40px"
+            android:layout_marginBottom="40px"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSchedulers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:padding="16dp" >
+    </androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddScheduler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_add"
+        android:contentDescription="Add Scheduler" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"/>
+</LinearLayout >
